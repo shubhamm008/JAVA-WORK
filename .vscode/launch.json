@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "vector",
+            "request": "launch",
+            "mainClass": "vector",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "array3d",
+            "request": "launch",
+            "mainClass": "array3d",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "arrays1",
+            "request": "launch",
+            "mainClass": "arrays1",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "arrays2d",
+            "request": "launch",
+            "mainClass": "arrays2d",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "back11",
+            "request": "launch",
+            "mainClass": "back11",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "back2",
+            "request": "launch",
+            "mainClass": "back2",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "demoswings",
+            "request": "launch",
+            "mainClass": "demoswings",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "exceptions_practice",
+            "request": "launch",
+            "mainClass": "exceptions_practice",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "hellointerfaces",
+            "request": "launch",
+            "mainClass": "hellointerfaces",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "input",
+            "request": "launch",
+            "mainClass": "input",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "myyThread",
+            "request": "launch",
+            "mainClass": "myyThread",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "prepared_statement",
+            "request": "launch",
+            "mainClass": "prepared_statement",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "string_operations",
+            "request": "launch",
+            "mainClass": "string_operations",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
+            "name": "swingss",
+            "request": "launch",
+            "mainClass": "swingss",
+            "projectName": "java_c3ec7ea7"
+        }
+    ]
+}
