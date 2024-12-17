@@ -21,22 +21,96 @@ public class Strings {
         // System.out.println(ok.startsWith("S"));
         // System.out.println(ok.endsWith("UI"));
         // System.out.println(ok.compareTo(ok2));
+        // Scanner sc=new Scanner(System.in);
+        // System.out.print("Enter your string:");
+        // String ok=sc.nextLine();
+        // String ok1=new String();
+        // int k=0;
+        // for(int i=ok.length()-1;i>=0;i--)
+        // {
+        //     ok1=ok1+ok.charAt(i);
+        // }
+        //  if(ok.equals(ok1))
+        //  {
+        //     System.out.println("Palindrome");
+        //  }
+        //  else
+        //  {
+        //     System.out.println("Not palindrome");
+        //  }
+        //  char[]arr=new char[10];
+         //        ok.getChars(0,ok.length()-9,arr,0);
+         //        for(char k:arr)
+         //        {
+         //            System.out.print(k);
+         //        }
+         //        byte arr[]=ok.getBytes();
+         //        for(byte b:arr)
+         //        {
+         //            System.out.print(b+" ");
+         //
+         //        }
+         //        char arr[]= new char[100];
+         //        arr=ok.toCharArray();
+         //        for(char ok1:arr)
+         //        {
+         //            System.out.print(ok1);
+         //        }
+        // String ok="welcome to JAVA";
+        // int k1=ok.indexOf('e');
+        // System.out.println(k1);
+        // System.out.println(ok.indexOf("to",5));
+        // System.out.println(ok.lastIndexOf('e',4));
+        // String k=ok.substring(11);
+        // System.out.println(k);
+        // System.out.println(ok.substring(8,12));
+        // System.out.println(ok.replace("to","for"));
+        // System.out.println(ok.trim());
+        // System.out.println(ok.toUpperCase());
+        // System.out.println(ok.toLowerCase());
+        // String [] arr=ok.split(" ");
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter your string:");
         String ok=sc.nextLine();
-        String ok1=new String();
-        int k=0;
-        for(int i=ok.length()-1;i>=0;i--)
+        int count=1;
+        //     String [] arr=ok.split(" ");
+        //    System.out.println(arr.length);
+        // for(int i=0;i<ok.length();i++)
+        // {
+        //     if(ok.charAt(i)=='a' ||  ok.charAt(i)=='e' || ok.charAt(i)=='i' || ok.charAt(i)=='o' || ok.charAt(i)=='u')
+        //     {
+        //         count++;
+        //     }
+        //     else if(ok.charAt(i)==32)
+        //     {
+        //         continue;
+        //     }
+        //     else
+        //     {
+        //         count1++;
+        //     }
+        // }
+        // System.out.println("Vowels are:" + count);
+        // System.out.println("Consonants are: " + count1);
+        for(int i=0;i<ok.length();i++)
         {
-            ok1=ok1+ok.charAt(i);
+            char k=ok.charAt(i);
+            count=1;
+            if(ok.charAt(i)==' ')
+            {
+                continue;
+            }
+            else
+            {
+            for(int j=i+1;j<ok.length();j++)
+            {
+                if(ok.charAt(j)==k)
+                {
+                    count++;
+                }
+            }
         }
-         if(ok.equals(ok1))
-         {
-            System.out.println("Palindrome");
-         }
-         else
-         {
-            System.out.println("Not palindrome");
-         }
+            System.out.print(ok.charAt(i)+""+count);
+            ok=ok.replace(ok.charAt(i),' ');
+        }
     }
 }
