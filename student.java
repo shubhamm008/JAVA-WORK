@@ -1,11 +1,11 @@
 import java.util.Scanner; 
 public class student {
-    Scanner sc=new Scanner(System.in);
     int roll;
     int fee;
     public
     void input()
     {
+        Scanner sc=new Scanner(System.in);
         System.out.print("Enter your roll number:");
         this.roll=sc.nextInt();
         System.out.print("Enter your fee:");
