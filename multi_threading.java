@@ -1,4 +1,11 @@
-class ok extends Maths implements Runnable
+class Mathss
+{
+    void Mathss()
+    {
+        System.out.println("Default constructor of maths");
+    }
+}
+class Demook extends Mathss implements Runnable
 {
     public void run()
     {
@@ -19,9 +26,10 @@ public class multi_threading extends Thread{
         m1.start();
         multi_threading m2=new multi_threading();
         m2.start();
+        //m2.sleep(null);
         multi_threading m3=new multi_threading();
         m3.start();
-        ok n=new ok();
+        Demook n=new Demook();
         Thread d=new Thread(n);
         d.start();
     }
