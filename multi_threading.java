@@ -26,7 +26,18 @@ public class multi_threading extends Thread{
         m1.start();
         multi_threading m2=new multi_threading();
         m2.start();
-        //m2.sleep(null);
+        try
+        {
+            m2.wait();
+        }
+        catch (InterruptedException e)
+        {
+            System.out.println(e.getMessage());
+        }
+        catch (IllegalMonitorStateException se)
+        {
+            System.out.println(se.getMessage());
+        }
         multi_threading m3=new multi_threading();
         m3.start();
         Demook n=new Demook();
