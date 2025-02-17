@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "linked_list",
+            "request": "launch",
+            "mainClass": "linked_list",
+            "projectName": "java_c3ec7ea7"
+        },
+        {
+            "type": "java",
             "name": "vector",
             "request": "launch",
             "mainClass": "vector",
