@@ -2,7 +2,7 @@ class LinkedList1 {
     public
     int data;
     LinkedList1 next;
-
+    static LinkedList1 headFinal;
     // Constructor
     public LinkedList1()
     {
@@ -114,12 +114,40 @@ class LinkedList1 {
        } 
        return slow.data;
     }
+    public static LinkedList1 reverse(LinkedList1 head)
+    {
+        if(head.next==null)
+        {
+            headFinal=head;
+            return head;
+        }
+        LinkedList1 tail=reverse(head.next);
+        tail.next=head;
+        return head;
+    }
+    public static LinkedList1 reverseO3(LinkedList1 head)
+    {
+        LinkedList1 p=null;
+        LinkedList1 c=head;
+        LinkedList1 n=head.next;
+        while(c!=null)
+        {
+            n=c.next;
+            c.next=p;
+            p=c;
+            c=n;
+        }
+        return p;
+    }
     public static void main(String[] args) {
         LinkedList1 head = new LinkedList1(10);
-        head = insertinBegin(head, 20);
-        head = insertinBegin(head, 30);
-        head = insertinBegin(head, 40);
-        head = insertMid(1, 20, head);
-        printList(head);  // Output: 10 -> 20 -> 30 -> 40 -> NULL
+        head = insertInEnd(head, 20);
+        head = insertInEnd(head, 30);
+        head = insertInEnd(head, 40);
+        // head = reverse(head);
+        // head.next=null;
+        // head=headFinal;
+        head = reverseO3(head);
+        printList(head);
     }
 }
