@@ -2,11 +2,11 @@ public class selectionsort {
     public static void selectionsortt(int arr[])
     {
         int i=0;
-        // System.out.println(arr.length);
+        // System.out.println(arr.length);[10,9,8,7,6]
         while(i<arr.length)
         {
             int ind=i;
-            for(int j=i;j<arr.length;j++)
+            for(int j=i+1;j<arr.length;j++)
             {
                 if(arr[j]<arr[ind])
                 {
@@ -27,7 +27,7 @@ public class selectionsort {
     {
         int i=0;
         int j;
-        while(i<arr.length)
+        while(i<arr.length)//[10,9,8,7,6]
         {
             int element=arr[i];
             for(j=i-1;j>=0 && arr[j]>element;j--)
@@ -45,6 +45,7 @@ public class selectionsort {
     public static void main(String[] args) 
     {
         int arr[]={10,9,8,7,6};
-        insertionsort(arr);
+        // insertionsort(arr);
+        selectionsortt(arr);
     }
 }

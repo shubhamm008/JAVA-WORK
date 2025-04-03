@@ -3,6 +3,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Local_Date_Time {
@@ -38,5 +40,12 @@ public class Local_Date_Time {
         LocalDate nextDate=LocalDate.of(2026,3,31);
         Period d3=Period.between(nextDate, currDate);
         System.out.println(d3);
+        ZoneId d0=ZoneId.systemDefault();
+        System.out.println(d0);
+        LocalDateTime dd=LocalDateTime.now();
+        ZoneId Kolkata=ZoneId.of("Asia/Kolkata");
+        System.out.println(Kolkata);
+        ZonedDateTime zonedDateTime=dd.atZone(Kolkata);
+        System.out.println(zonedDateTime);
     }
 }
